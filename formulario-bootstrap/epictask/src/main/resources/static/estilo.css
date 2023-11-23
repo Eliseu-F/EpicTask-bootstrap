@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    align-items: center;
+    text-align: center;
+    color: #333;
+}
+
+p {
+    align-items: center;
+    text-align: center;
+}
+
+.content {
+    width: 50%;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: grid;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="date"] {
+    /* Add additional styling for date input if needed */
+}
+
+span {
+    color: #d9534f;
+    font-size: 0.9em;
+    display: block;
+    margin-top: 5px;
+}
+
+.actions {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn.blue {
+    background-color: #337ab7;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #337ab7;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.tasks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card-task {
+    width: 30%;
+    padding: 15px;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-task h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.card-task p {
+    margin: 10px 0;
+    color: #555;
+}

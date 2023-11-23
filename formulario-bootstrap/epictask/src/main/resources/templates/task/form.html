@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../estilo.css">
+</head>
+
+<body>
+    <h1>Cadastrar Usuario</h1>
+
+    <div class="content">
+
+        <form action="" method="post" th:object="${task}">
+
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" th:field="*{nome}">
+            <span th:errors="*{nome}"></span>
+
+            <label for="email">Email</label>
+            <textarea th:field="*{email}"></textarea>
+            <span th:errors="*{email}"></span>
+
+            <label for="telefone">Telefone</label>
+            <input type="number" th:field="*{telefone}">
+            <span th:errors="*{telefone}"></span>
+
+
+            <label for="nascimento">Nascimento</label>
+            <input type="date" th:field="*{nascimento}" pattern="yyyy-MM-dd">
+            <span th:errors="*{nascimento}"></span>
+
+            <label for="senha">Senha</label>
+            <input type="password" th:field="*{senha}">
+            <span th:errors="*{senha}"></span>
+            <div id="senha" class="form-text">
+                Sua senha deve ter de 8 a 20 caracteres, conter letras e números e não deve conter espaços,
+                 caracteres especiais ou emoji.
+            </div>
+
+            <div class="actions">
+
+                <a href="/task" class="btn">cancelar</a>
+                <button class="btn blue">salvar</button>
+
+            </div>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

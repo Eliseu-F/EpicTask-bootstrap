@@ -37,7 +37,6 @@ body{
 	align-items: center;
 	margin-top: 20px;
 	padding-bottom: 3rem;
-	
 }
 
 a{
@@ -355,6 +354,11 @@ footer {
 	line-height: 2rem;
 	position: absolute;
 	bottom: 0;
+}
+
+.head{
+	align-items: center;
+  	justify-content: center;
 }
 
 @media (max-width: 900px) {

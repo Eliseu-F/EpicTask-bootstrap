@@ -20,8 +20,6 @@ public class TaskController {
 
     @Autowired
     TaskRepository repository;
-    
-
 
     @GetMapping
     public String index(Model model){
