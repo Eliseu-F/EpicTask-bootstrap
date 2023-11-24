@@ -29,19 +29,19 @@ public class Task {
     @NotBlank @Size(min = 3, message = "Campo vazio. Mínimo 3 caracteres.")
     String nome;
 
-    @Size(min = 5, message = "formato de email incorreto.")
-    @Pattern(regexp = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$", message = "Formato de email incorreto.")
-    String email;
+    @Size(min = 19, message = "Formato de cartão incorreto.")
+    @Pattern(regexp = "^\\d{4}-\\d{4}-\\d{4}-\\d{4}$", message = "Formato de cartão incorreto.")
+    String nmrCartao;
 
     @NotBlank @Size(min = 9, max = 12, message = "Telefone incorreto.")
     String telefone;
 
-    @NotNull(message = "A data de nascimento não pode ser nula")
+    @NotNull(message = "O vencimento do cartão não pode estar vazio")
     @Past(message = "A data de nascimento deve estar no passado")
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @DateTimeFormat(pattern = "yyyy-MM")
     LocalDate nascimento;
 
-    @NotBlank @Size(min = 6, message = "A senha deve ter pelo menos 6 caracteres")
+    @NotBlank @Size(min = 6, message = "Senha incompleta")
     private String senha;
 
 }
