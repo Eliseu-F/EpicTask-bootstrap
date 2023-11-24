@@ -22,6 +22,9 @@
                     <p th:text="${task.description}"></p>
                     <p th:text="${task.score}"></p>
                     <div class="actions"></div>
+                    <form th:action="@{'/task/{id}'(id=)}" method=""POST>
+                        <button>apagar</button>
+                    </form>
                 </div>
             </div>
         </div>
