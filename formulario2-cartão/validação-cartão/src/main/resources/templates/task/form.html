@@ -34,9 +34,9 @@
             <input th:field="*{nmrCartao}" type="text" id="nmrCartao" maxlength="19" oninput="formatarNumeroCartao(this)">
             <span th:errors="*{nmrCartao}"></span>
 
-            <label for="nascimento">CVV</label>
-            <input type="date" th:field="*{nascimento}" pattern="yyyy-MM-dd">
-            <span th:errors="*{nascimento}"></span>
+            <label for="cvv">CVV</label>
+            <input type="number" th:field="*{cvv}">
+            <span th:errors="*{cvv}"></span>
 
             <label for="telefone">Telefone</label>
             <input type="number" th:field="*{telefone}">

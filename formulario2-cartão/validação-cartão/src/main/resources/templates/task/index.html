@@ -21,6 +21,10 @@
             <p th:text="${task.telefone}"></p>
             <p th:text="${task.nascimento}"></p>
             <p th:number="${task.senha}"></p>
+            <div class="actions"></div>
+                    <form th:action="@{'/task/{id}'(id=${task.id})}" th:method="delete">
+                        <button>apagar</button>
+                    </form>
         </div>
     </div>
 
