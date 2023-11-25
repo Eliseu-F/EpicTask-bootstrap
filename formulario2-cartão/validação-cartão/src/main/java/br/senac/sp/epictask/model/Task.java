@@ -36,10 +36,8 @@ public class Task {
     @NotBlank @Size(min = 9, max = 12, message = "Telefone incorreto.")
     String telefone;
 
-    @NotNull(message = "O vencimento do cartão não pode estar vazio")
-    @Past(message = "A data de nascimento deve estar no passado")
-    @DateTimeFormat(pattern = "yyyy-MM")
-    LocalDate nascimento;
+    @NotNull @Size(max = 3, message = "insira o cvv correto.")
+    String cvv;
 
     @NotBlank @Size(min = 6, message = "Senha incompleta")
     private String senha;
